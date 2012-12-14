@@ -64,7 +64,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 				
 					
 					<h2>
-						<img src="/null.png" onLoad="scalar.icon(event,'creation','blue',Array(Array('icon_disc',10,10,0,.8),Array('icon_creation',12.5,12.5,0,.75,false)),['keyline',1,3,6,Array(20,100,60),1])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'creation','blue',Array(Array('icon_disc',10,10,0,.8),Array('icon_creation',12.5,12.5,0,.75,false)),['keyline',1,3,6,Array(20,100,60),1])">
 						Creation
 					</h2>
 					
@@ -75,7 +75,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 					</ul>
 				
 					<h2>
-						<img src="/null.png" onLoad="scalar.icon(event,'effects','blue',Array(Array('icon_disc',10,10,0,.8),Array('icon_star',22,18,0,.4,false),Array('icon_star',56,38,0,.25,false),Array('icon_star',38,57,0,.2,false)),['keyline',1,3,6,Array(20,100,60),1])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'effects','blue',Array(Array('icon_disc',10,10,0,.8),Array('icon_star',22,18,0,.4,false),Array('icon_star',56,38,0,.25,false),Array('icon_star',38,57,0,.2,false)),['keyline',1,3,6,Array(20,100,60),1])">
 						Effects
 					</h2>
 					
@@ -91,7 +91,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 					</ul>
 					
 					<h2>
-						<img src="/null.png" onLoad="scalar.icon(event,'control','blue',Array(Array('icon_disc',10,10,0,.8),Array('icon_activate',23,23,0,.5,false)),['keyline',1,3,6,Array(20,100,60),1])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'control','blue',Array(Array('icon_disc',10,10,0,.8),Array('icon_activate',23,23,0,.5,false)),['keyline',1,3,6,Array(20,100,60),1])">
 						Control
 						
 					</h2>

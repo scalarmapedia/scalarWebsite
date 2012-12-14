@@ -395,7 +395,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						</func>
 						
 						<exampleSVG>
-							<img src="/null.png" onLoad="scalar.icon(event,'iconDef_example1_01',null,Array(Array('icon_disc',0,0,0,1)))">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'iconDef_example1_01',null,Array(Array('icon_disc',0,0,0,1)))">
 						</exampleSVG>
 						
 						<p>
@@ -409,7 +409,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						</func>
 						
 						<exampleSVG>
-							<img src="/null.png" onLoad="scalar.icon(event,'iconDef_example1_02',null,[['icon_disc',0,0,0,1],['icon_contact',5,5,0,.9]])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'iconDef_example1_02',null,[['icon_disc',0,0,0,1],['icon_contact',5,5,0,.9]])">
 						</exampleSVG>
 						
 						<p>
@@ -424,7 +424,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						</func>
 						
 						<exampleSVG>
-							<img src="/null.png" onLoad="scalar.icon(event,'iconDef_example1_03',null,[['icon_disc',0,0,0,1],['icon_contact',5,5,0,.9],['icon_disc',50,0,0,.5],['icon_clock',51,1,0,.48]])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'iconDef_example1_03',null,[['icon_disc',0,0,0,1],['icon_contact',5,5,0,.9],['icon_disc',50,0,0,.5],['icon_clock',51,1,0,.48]])">
 						</exampleSVG>
 	
 						<p>
@@ -436,7 +436,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						</func>
 						
 						<exampleSVG>
-							<img src="/null.png" onLoad="scalar.icon(event,'iconDef_example1_04',null,[['icon_disc',0,0,0,1],['icon_contact',5,5,0,.9],['icon_disc',50,0,0,.5],['icon_clock',51,1,0,.48]],['keyline',1,5,0,Array(0,100,0),1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'iconDef_example1_04',null,[['icon_disc',0,0,0,1],['icon_contact',5,5,0,.9],['icon_disc',50,0,0,.5],['icon_clock',51,1,0,.48]],['keyline',1,5,0,Array(0,100,0),1])">
 						</exampleSVG>
 						
 						<p>
@@ -451,7 +451,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						<a name="scalar_toggleFilter"></a>
 						
 						<exampleSVG>
-							<img src="/null.png" onLoad="scalar.icon(event,'iconDef_example1_5',null,[['icon_disc',10,10,0,.8],['icon_contact',10,10,0,.8,false],['icon_disc',50,0,0,.5,false],['icon_clock',51,1,0,.48,false]],['keyline',1,4,4,Array(0,100,0),1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'iconDef_example1_5',null,[['icon_disc',10,10,0,.8],['icon_contact',10,10,0,.8,false],['icon_disc',50,0,0,.5,false],['icon_clock',51,1,0,.48,false]],['keyline',1,4,4,Array(0,100,0),1])">
 						</exampleSVG>
 						
 					</examples>
@@ -517,11 +517,11 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						<a name="scalar_toggleGroupFilters"></a>
 						
 						<exampleSVG onClick="scalar.toggleFilter('group_A',0,0,.05)" >
-							<img src="/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_1',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,1,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_2',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,2,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_3',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,3,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_4',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,5,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_5',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,6,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_1',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,1,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_2',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,2,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_3',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,3,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_4',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,5,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_toggleFilter_example1_5',null,[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,6,1])">
 						</exampleSVG>	
 					</examples>
 					
@@ -577,11 +577,11 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						</func>
 						
 						<exampleSVG onClick="scalar.toggleGroupFilters('group_A',null,0,.05)" >
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_1','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,1,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_2','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,2,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_3','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,3,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_4','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,5,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_5','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,6,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_1','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,1,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_2','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,2,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_3','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,3,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_4','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,5,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example1_5','group_A',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,6,1])">
 						</exampleSVG>
 						
 						<p>
@@ -594,11 +594,11 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						</func>
 						
 						<exampleSVG onClick="scalar.toggleGroupFilters('group_B',null,500,.1)" >
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_1','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,1,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_2','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,2,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_3','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,3,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_4','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,5,1])">
-							<img src="/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_5','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,6,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_1','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,1,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_2','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,2,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_3','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,3,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_4','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,5,1])">
+							<img src="/scalar/null.png" onLoad="scalar.icon(event,'toggleGroupFilters_example2_5','group_B',[['icon_disc',12.5,12.5,0,.75],['icon_contact',15,15,0,.7],['icon_disc',48,4,0,.45],['icon_clock',49,5,0,.43]],['gaussianBlur',1,6,1])">
 						</exampleSVG>
 						
 					</examples>
