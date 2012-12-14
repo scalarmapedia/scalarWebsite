@@ -1,0 +1,1110 @@
+
+* {
+	-webkit-box-sizing: 	border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: 	border-box; /* Firefox, other Gecko */
+	box-sizing: 		border-box; /* Opera/IE 8+ */
+	
+	border:			0;
+	
+	padding:		0;
+	margin:			0;
+}
+
+header, section, footer, aside, nav, article, figure {
+	display: 		block;
+	}
+
+html {
+	overflow-y: 		scroll;	
+}
+	
+body {
+	width:			100%;
+	
+	position:		relative;
+	
+	font-family: 		Open Sans;
+	font-weight:		400;
+	font-size:		.95rem;
+	color:			hsl(205,5%,80%);
+	line-height:		1em;
+	text-align:		center;
+	vertical-align:		top;
+  
+	cursor:			default;
+
+	background:		hsl(200,30%,12%);
+	
+	margin:			0;
+	padding:		10px 0 20px 0;
+			
+	z-index:		0;
+}
+
+.hide {
+	display:		none;
+}
+
+img,svg {
+	width:			130px;
+	height:			130px;
+	
+	margin:			0;
+	padding:		0;
+	
+	cursor:			pointer;
+	
+	background:		hsla(212,5%,25%,0);
+	
+	display:		inline-block;
+}
+
+
+page {
+	width:			1000px;
+	height:			auto;
+	
+	position:		relative;
+	
+	border:			0px solid yellow;
+	border-radius:		20px 20px 20px 20px;
+	
+	margin:			75px auto 0 auto;
+	padding:		0 0 40px 0;
+		
+	background:		hsl(207,10%,27%);
+		
+	display:		table;
+}
+
+
+
+blanker {
+	width:			1000px;
+	height:			85px;
+
+	position:		fixed;
+	
+	border:			0px solid yellow;
+	
+	border-radius:		0;
+	
+	margin:			-85px auto 0 auto;
+	padding:		0;
+	
+	background:		hsl(200,30%,12%);
+	
+	display:		table;
+	z-index:		25;
+}
+
+header {
+	width:			1000px;
+	height:			85px;
+
+	position:		fixed;
+	
+	border:			0px solid purple;
+	
+	border-radius:		20px 20px 0 0;
+	
+	margin:			10px auto 0 auto;
+	padding:		5px;
+	
+	overflow:		hidden;
+	
+	background: 		-webkit-gradient(linear, left top, left bottom, from(hsl(200,20%,45%)), to(hsl(200,30%,32%))); 		/* Chrome */
+	background-image: 	linear-gradient(   hsl(200,20%,45%),hsl(200,30%,32%)   );						/* Firefox, IE, Opera */
+	
+	display:		block;
+}
+gfx {
+	width:			1200px;
+	height:			1200px;
+	
+	position:		absolute;
+	top:			-320px;
+	left:			-60px;
+	
+	border:			0px solid blue;
+
+	opacity:		.075;
+
+	display:		block;	
+	float:			left;
+	z-index:		30;
+}
+gfx svg {
+	width:			1200px;
+	height:			1200px;
+	
+	display:		block;
+}
+
+
+fadeout {
+	width:			80%;
+	height:			36px;
+
+	position:		absolute;
+	bottom:			-46px;
+	left:			0px;
+	
+	border:			0px dashed purple;
+	
+	margin:			0;
+	padding:		0;
+	
+	background: 		-webkit-gradient(linear, left top, left bottom, from(hsl(207,10%,26%)), to(hsla(207,10%,26%,0))); 	/* Chrome */
+	background-image: 	-ms-linear-gradient( -90deg, hsl(207,10%,26%), hsl(207,10%,26%) 10%, hsla(207,10%,26%,0));		/* IE */
+	background-image: 	linear-gradient(   hsl(207,10%,26%),hsla(207,10%,26%,0)   );						/* Firefox, Opera */
+	
+	display:		block;
+	z-index:		25;
+}
+
+
+section {
+	position:		relative;
+	top:			0px;
+	left:			0px;
+	
+	width:			100%;
+	border:			0px solid blue;
+	display:		table;
+			
+	background:		hsl(207,10%,26%);
+	
+	float:			left;
+	z-index:		15;	
+}
+
+
+
+
+
+logoCont {
+	height:			auto;
+	width:			15%;
+	
+	border:			0px solid orange;
+
+	text-align:		left;
+	
+	overflow:		hidden;
+	
+	padding:		0 0 0 15px;
+	
+	display:		table-cell;
+}
+logoCont logo {
+	height:			75px;
+	width:			180px;
+	
+	border:			0px solid pink;
+
+	text-align:		left;
+
+	overflow:		hidden;
+	
+	display:		block;
+}
+.scalarLogo {
+	width:			180px;
+	height:			180px;
+	
+	border:			0px solid red;
+	
+	margin:			-49px 0 0  0;
+	
+	display:		block;
+}
+
+header txtCont {
+	width:			auto;
+	height:			1em;
+	
+	vertical-align:		middle;
+	
+	margin:			0;
+	padding:		0;
+		
+	border:			0px solid blue;
+		
+	display:		table-cell;
+}
+header txt {
+	width:			auto;
+	height:			1em;
+	
+	font-family: 		Open Sans;
+	font-weight:		600;
+	font-style:		italic;
+	font-size:		170%;
+	color:			hsla(205,0%,100%,.8);
+	line-height:		1em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	cursor:			default;
+
+	border:			0px solid red;
+	
+	margin:			.8em 0 0 0;
+	padding:		0 0 0 0;
+	
+	display:		table;
+}
+
+
+
+
+
+
+explain {
+	width:			75%;
+	
+	vertical-align:		top;
+	
+	border:			0px dashed yellow;
+	
+	padding:		2em 0 2em 1.6em;
+	
+	display:		table-cell;
+}
+
+
+
+
+
+
+
+
+
+h1, h2 {
+	font-family: 		Open Sans;
+	line-height:		1em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	padding:		1em 0 .4em 0;
+}
+h1 {
+	font-weight:		700;
+	font-size:		130%;
+	color:			hsl(205,5%,97%);
+}
+h2 {
+	font-weight:		600;
+	font-size:		120%;
+	color:			hsl(205,5%,93%);
+}
+
+h2 svg {
+	width:			40px;
+	height:			40px;
+	
+	margin:			-12px .5em 0 0;
+	
+	display:		inline-block;
+	float:			left;
+}
+h2 svg #discField {
+	Fill:			hsl(15,100%,45%);
+}
+h2 svg #starField,
+h2 svg #starBorder {
+	fill:			white;
+}
+
+
+
+b {
+	font-family: 		Open Sans;
+	font-weight:		600;
+	font-style:		normal;
+}
+
+i {
+	font-family: 		Open Sans;
+	font-weight:		600;
+	font-style:		italic;
+}
+
+a {
+	color:			hsl(210,50%,80%);
+}
+
+
+p {
+	width:			100%;
+	height:			auto;
+	
+	font-family: 		Open Sans;
+	font-size:		100%;
+	color:			hsla(205,20%,85%,.8);
+	line-height:		1.3em;
+	text-align:		justify;
+	vertical-align:		top;
+	text-indent:		0;
+	
+	border:			0px dashed grey;
+	
+	margin:			0;
+	padding:		0 1.5rem 1.5rem 0;
+	
+	display: block;
+	-webkit-margin-before: 	0em;
+	-webkit-margin-after: 	0em;
+	-webkit-margin-start: 	0px;
+	-webkit-margin-end: 	0px;
+}
+p b {
+	color:			hsl(205,5%,100%);
+}
+p i {
+	color:			hsl(205,5%,90%);
+}
+p a {
+	color:			hsl(210,50%,80%);
+}
+
+
+
+
+
+
+
+
+iconset {
+	width:			120px;
+	height:			auto;
+	
+	vertical-align:		top;
+	
+	border:			0px solid blue;
+	
+	padding:		0;
+	margin:			0 0 0 1em;
+	
+	float:			right;
+	
+	display:		inline-block;
+}
+iconset svg {
+	width:			108px;
+	height:			108px;
+	
+	text-align:		center;
+}
+
+
+
+
+
+ul {
+	width:			100%;
+	
+	font-family: 		Open Sans;
+	color:			hsl(205,5%,90%);
+	line-height:		1em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	border:			0px solid blue;
+	
+	padding:		0 0 1em 6em;
+}
+ul li {
+	color:			hsl(205,35%,85%);
+	font-size:		90%;
+	line-height:		1.2em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	margin:			.5em 0 0 0;
+}
+
+
+
+
+
+
+/*=================================================== NAVIGATION MENU ==================================================*/
+nav {
+	width:			20%;
+	
+	border:			0px dashed green;
+	
+	vertical-align:		top;
+	
+	padding:		0;
+	margin:			0;
+	
+	display:		table-cell;
+}
+
+nav cont {
+	width:			13%;
+	
+	position:		fixed;
+	
+	border:			0px dashed red;
+	
+	vertical-align:		top;
+	
+	padding:		0;
+	margin:			0;
+	
+	display:		table;
+}
+
+nav cont ul {
+	width:			100%;
+	
+	font-family: 		Open Sans;
+	line-height:		1.3em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	border:			0px solid green;
+	
+	list-style-type:	none;
+	
+	padding:		0 0 1em 8%;
+	
+	display:		table;
+}
+nav cont ul li {
+	color:			hsl(205,35%,85%);
+	font-size:		90%;
+	line-height:		1.2em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	margin:			2em 0 0 0;
+	
+	border:			1px solid hsla(200,0%,70%,0);
+}
+nav cont ul li a {
+	width:			100%;
+	text-decoration: 	none;
+	border:			0px dashed purple;
+	display:		table;
+}
+nav ul li h1 {
+	width:			70%;
+	
+	font-weight:		700;
+	font-size:		140%;	
+	color:			hsla(200,50%,85%,.7);
+	line-height:		1em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	border:			0px solid red;
+	
+	list-style-type:	none;
+	
+	padding:		.4em 0 .3em .6em;
+	
+	display:		table;
+}
+nav ul li:hover h1 {
+	color:			hsl(205,100%,98%);
+	text-shadow: 		3px 3px 1px hsla(200,40%,5%,1);
+}
+
+.selected h1 {
+	color:			hsl(15,100%,65%);
+}
+.selected:hover h1 {
+	color:			hsl(35,100%,80%);
+	text-shadow: 		3px 3px 1px hsla(200,40%,5%,1);
+}
+
+
+nav svg {
+	width:			35px;
+	height:			35px;
+	
+	text-align:		center;
+	
+	float:			left;
+}
+nav svg #discField,
+nav svg #photoHead,
+nav svg #photoBody,
+nav svg #photoSun {
+	fill:			white;
+}
+nav .selected svg #discField,
+nav .selected svg #icon_docs,
+nav .selected svg #photoHead,
+nav .selected svg #photoBody,
+nav .selected svg #photoSun {
+	fill:			hsl(15,100%,65%);
+}
+nav .selected:hover svg #discField,
+nav .selected:hover svg #icon_docs,
+nav .selected:hover svg #photoHead,
+nav .selected:hover svg #photoBody,
+nav .selected:hover svg #photoSun {
+	fill:			hsl(35,100%,80%);
+}
+
+nav svg #icon_questionmark,
+nav svg #starBorder,
+nav svg #starField,
+nav svg #photoField,
+nav svg #currency_gbp,
+nav svg #commentField,
+nav svg #commentBorder,
+nav svg #icon_arrow,
+nav svg #icon_scroll {
+	fill:			hsl(205,20%,25%);
+}
+
+
+
+
+
+
+
+row {
+	width:			100%;
+	height:			auto;
+	
+	position:		relative;
+	
+	border:			0px solid red;
+	border-radius:		0 0 90px 0;
+	
+	margin:			0 auto 0 auto;
+	padding:		0 30px;
+	
+	background:		hsla(212,50%,5%,.2);
+	
+	display:		table;
+}
+
+
+
+
+.toggleOn, .toggleOff {
+	width:			30px;
+	height:			30px;
+	
+	position:		absolute;
+	top:			20px;
+	left:			2rem;
+	
+	border-radius:		50%;
+	
+	margin:			0;
+	padding:		0;
+	
+	cursor:			pointer;
+	
+	background:		hsla(0,55%,25%,1);
+	
+	display:		table;
+}
+.toggleOn {
+	top:			55px;
+	background:		hsla(120,30%,30%,1);
+}
+
+
+
+
+
+
+
+
+error {
+	width:			70%;
+	
+	font-family: 		Open Sans;
+	font-size:		140%;	
+	color:			hsla(200,50%,85%,.95);
+	line-height:		1.3em;
+	text-align:		center;
+	vertical-align:		top;
+	
+	border:			px solid blue;
+	
+	list-style-type:	none;
+	
+	padding:		.4em 0 .3em .6em;
+	margin:			20px auto 0 auto;
+	
+	display:		table;
+}
+error p {
+	width:			100%;
+	
+	font-family: 		Open Sans;
+	font-size:		100%;	
+	color:			hsla(200,50%,98%,.98);
+	line-height:		1.4em;
+	text-align:		center;
+	vertical-align:		top;
+	
+	border:			px solid yellow;
+	
+	padding:		.4em 0 1em 0;
+	margin:			0;
+	
+	display:		table;
+}
+error H1 {
+	width:			100%;
+	
+	font-family: 		Open Sans;
+	font-weight:		700;
+	font-size:		170%;	
+	color:			hsla(200,50%,98%,.98);
+	line-height:		1em;
+	text-align:		center;
+	vertical-align:		top;
+	
+	border:			px solid red;
+	
+	padding:		.8em 0 .8em 0;
+	
+	display:		table;
+}
+
+
+
+
+
+
+
+/* ========================================================= DOCS ============================================================= */
+docs {
+	width:			75%;
+	
+	vertical-align:		top;
+	
+	border:			0px dashed yellow;
+	
+	padding:		2em 0 2em 1.3em;
+	
+	display:		table-cell;
+}
+
+docs funcDef {
+	font-family: 		Sanchez;
+	font-size:		130%;	
+	color:			hsla(200,50%,98%,.98);
+	line-height:		1.4em;
+	text-align:		center;
+	vertical-align:		top;
+	
+	border:			0px dashed yellow;
+	
+	padding:		.6em 0 .2em 0rem;
+	
+	display:		table-cell;
+}
+
+docs func {
+	width:			100%;
+	height:			auto;
+
+	font-family: 		Sanchez;
+	font-size:		90%;
+	color:			hsla(205,20%,85%,1);
+	line-height:		1.3em;
+	text-align:		left;
+	vertical-align:		top;
+	white-space:		normal;
+	
+	border:			0px dashed purple;
+	
+	margin:			0;
+	padding:		.8em 0 .8em 1em;
+	
+	background:		hsla(200,30%,2%,.4);
+	
+	display:		table;
+}
+
+
+docs obj {
+	color:			hsl(60,75%,65%);
+}
+docs str {
+	color:			hsl(0,100%,60%);
+}
+docs num {
+	color:			hsl(180,50%,60%);
+}
+docs array {
+	color:			hsl(30,100%,60%);
+}
+docs function {
+	color:			hsl(250,100%,75%);
+}
+
+
+
+
+
+/* ========================== Nested Defblock ========================*/
+docs defBlock {
+	width:			100%;
+	
+	border:			0px dashed pink;
+	
+	border-radius:		0;
+
+	padding:		1em 0 1em 1.6rem;
+	
+	background:		hsla(190,50%,5%,.3);
+
+	display:		table;	
+}
+
+docs defBlock obj,
+docs defBlock array,
+docs defBlock str,
+docs defBlock num,
+docs defBlock function {
+	width:			auto;
+	border:			0px dashed grey;
+	
+	margin:			0;
+	padding:		.1em .8em 0em 0;
+	
+	display:		inline-block;
+	float:			left;
+}
+
+docs def {
+	width:			100%;
+	height:			auto;
+
+	font-size:		89%;
+	color:			hsla(205,20%,85%,1);
+	line-height:		1.5em;
+	text-align:		justify;
+	vertical-align:		top;
+	white-space:		normal;
+	
+	border:			0px dashed purple;
+	
+	margin:			0;
+	padding:		0 2em 1em 0;
+	
+	display:		block;
+}
+
+
+
+
+
+
+/* ========================== Nested Defblock ===========================*/
+docs defBlock defBlock {
+	width:			80%;
+	
+	border:			0px dashed pink;
+
+	border:			1px solid hsla(200,0%,100%,.1);	
+	border-radius:		20px 20px 30px 30px;
+
+	padding:		1em 0 1em 0;
+	margin:			0 0 0 10%;
+	
+	background:		hsla(210,30%,70%,.1);
+
+	display:		table;	
+}
+
+docs spc {
+	width:			100%;
+	height:			1.5em;
+	border:			0px dashed purple;	
+	display: table;	
+}
+
+docs defBlock defBlock h1,
+docs defBlock defBlock h2 {
+	font-family: 		Open Sans;
+	line-height:		1em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	padding:		0 0 .6em 1.5em;
+}
+docs defBlock defBlock h1 {
+	font-weight:		700;
+	font-size:		100%;
+	color:			hsl(205,5%,97%);
+}
+docs defBlock defBlock h2 {
+	font-weight:		600;
+	font-size:		100%;
+	color:			hsl(205,5%,93%);
+}
+
+docs defBlock defBlock func {
+	margin:			0;
+}
+docs defBlock defBlock func ~ func {
+	margin:			0 0 1em 0;
+	background:		hsla(210,30%,5%,.275);
+}
+
+docs defBlock defBlock func obj,
+docs defBlock defBlock func array,
+docs defBlock defBlock func str,
+docs defBlock defBlock func num,
+docs defBlock defBlock func function {
+	padding:		0;
+	display:		inline;
+	float:			none;
+}
+
+docs def {
+	padding:		0 2em 1em 1.6em;
+}
+docs defBlock defBlock obj,
+docs defBlock defBlock array,
+docs defBlock defBlock str,
+docs defBlock defBlock num,
+docs defBlock defBlock function {
+	padding:		.1em .8em 0em 1.6em;
+}
+
+
+
+
+
+
+
+docs p {
+	width:			100%;
+	height:			auto;
+	
+	font-family: 		Open Sans;
+	font-weight:		400;
+	font-size:		100%;
+	color:			hsla(205,20%,85%,.8);
+	line-height:		1.3em;
+	text-align:		justify;
+	vertical-align:		top;
+	
+	border:			0px dashed grey;
+	
+	margin:			0;
+	padding:		0 1.5rem 1.5rem 0rem;
+	
+	display: block;
+}
+
+
+
+
+/* ========================== Examples ===========================*/
+docs examples {
+	border:			0px dashed blue;
+	border-radius:		0 0 20px 20px;
+	
+	padding:		1em 1.5rem 0 1.5rem;
+	margin:			0em 0 1em 0;
+	
+	background:		hsla(210,100%,5%,.2);
+	
+	display:		table;
+}
+
+docs examples h1 {
+	padding:		.6em 0 .5em 0em;
+}
+docs examples h2 {
+	padding:		.6em 0 .5em 0em;
+}
+
+docs examples p {
+	width:			100%;
+	height:			auto;
+	
+	font-family: 		Open Sans;
+	font-weight:		400;
+	font-size:		100%;
+	color:			hsla(205,20%,85%,.8);
+	line-height:		1.3em;
+	text-align:		justify;
+	vertical-align:		top;
+	
+	border:			0px dashed grey;
+	
+	margin:			0;
+	padding:		0 0 .5rem 0;
+	
+	display: block;
+}
+
+
+docs exampleSVG {
+	width:			auto;
+	height:			auto;
+	
+	text-align:		left;
+	
+	margin:			0;
+	padding:		5px 0 5px 0;
+	
+	display:		table;
+}
+
+docs svg {
+	width:			90px;
+	height:			90px;
+	
+	text-align:		left;
+	
+	margin:			.5rem 0 2rem 0;
+	padding:		0;
+	
+	background:		hsla(212,5%,15%,0);
+	
+	display:		inline-block;
+}
+
+docs svg #discField {
+	fill:			white;
+}
+docs svg #icon_contact {
+	fill:			hsl(212,5%,20%);
+}
+docs svg #icon_layer_2 #discField {
+	fill:			hsl(212,5%,0%);
+}
+
+docmenu {
+	width:			100%;
+	height:			300px;
+	
+	position:		fixed;
+	
+	background:		red;
+	display:		block;
+}
+
+
+
+
+
+
+
+/* ======================================================== Docs Nav ===========================================================*/
+docsNav {
+	width:			19%;
+	height:			75vh;
+	
+	position:		absolute;
+	top:			11px;
+	left:			-201px;
+	
+	border:			0px dashed black;
+	
+	vertical-align:		top;
+	
+	padding:		0;
+	margin:			0;
+	
+	display:		block;
+	float:			left;
+	z-index:		5;
+}
+
+docsNav cont {
+	width:			15%;
+	height:			auto;
+
+	position:		fixed;
+		
+	border:			0px dashed red;
+	border-radius:		20px 0 0 20px;
+		
+	overflow-y:		auto;
+	
+	padding:		5px 10px 0 10px;
+	
+	background:		hsla(210,10%,35%,.3);
+	
+	display:		block;
+}
+.docsNavClosed cont {
+
+	opacity:		0;
+	
+	transition: 		opacity ease-in-out .5s;
+	-webkit-transition: 	opacity ease-in-out .5s;
+	-moz-transition: 	opacity ease-in-out .5s;
+	-o-transition: 		opacity ease-in-out .5s;
+}
+.docsNavOpen cont {
+	opacity:		1;
+	
+	transition: 		opacity ease-in-out .5s;
+	-webkit-transition: 	opacity ease-in-out .5s;
+	-moz-transition: 	opacity ease-in-out .5s;
+	-o-transition: 		opacity ease-in-out .5s;
+}
+
+docsNav cont ul {
+	width:			180px;
+	
+	font-family: 		Open Sans;
+	font-size:		80%;
+	
+	color:			hsl(205,5%,90%);
+	line-height:		1em;
+	text-align:		left;
+	vertical-align:		top;
+	
+	border:			0px dashed cyan;
+	border-radius:		15px;
+		
+	padding:		0 .5em .5em .5em;
+	margin:			0 0 1em 0;
+	
+	background:		hsla(210,10%,80%,.1);
+	
+	display:		block;
+}
+docsNav cont ul li {
+	width:			auto;
+	border:			0px dashed yellow;	
+	padding:		0 .5em 0 .5em;
+	display:		table;
+}
+docsNav cont ul a {
+	text-decoration:	none;
+	white-space:		nowrap;
+}
+docsNav cont ul h1 {
+	font-family: 		Open Sans;
+	font-weight:		700;
+	padding: 		.4em 0 .4em 0;
+}
+docsNav cont ul h2 {
+	font-family: 		Open Sans;
+	font-weight:		600;
+	padding: 		.4em 0 .6em 1em;
+}
+
+docsNav cont ul ul {
+	border:			0px dashed green;
+	border-radius:		0;
+	
+	padding:		.2em .5em .4em 2em;
+	background:		none;
+}
+
