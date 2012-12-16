@@ -27,7 +27,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<script src="/scalar/js/util.js"></script>
+		<script src="/js/util.js"></script>
 		<script src="/scalar/js/jsBezier-0.4.js"></script>
 		<script src="/scalar/js/svg.js"></script>
 		
