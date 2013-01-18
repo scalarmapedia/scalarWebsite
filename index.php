@@ -43,6 +43,8 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 		
 		<script src="/scalar/media/svg_compiled/svg_fragments.js"></script>
 		
+		<?php require(SITE_ROOT.'/elements/analytics.php'); ?>
+		
 		<?php require(SITE_ROOT.'/elements/fonts.php'); ?>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	
