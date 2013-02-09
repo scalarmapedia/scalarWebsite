@@ -627,6 +627,12 @@ nav cont {
 	
 	display:		block;
 }
+.downloadButtonArea #icon_rosette {
+	fill:			hsl(200,50%,35%);
+	stroke:			hsl(200,60%,55%);
+	stroke-width:		1.5;
+}
+
 
 .downloadButtonArea a H1,
 .downloadButtonArea a H2 {
@@ -648,17 +654,21 @@ nav cont {
 	top:			4rem;
 	font-size:		.8rem;
 }
+
 .downloadButtonArea #downloadButtonArrow {
 	width:			2.5rem;
 	height:			2.5rem;
 	
 	position:		absolute;
-	top:			6rem;
+	top:			5.5rem;
 	left:			3.25rem;
 	
 	border:			0px dashed black;
 	
 	display:		block;
+}
+.downloadButtonArea #icon_arrow {
+	fill:			hsl(200,0%,100%);
 }
 
 
