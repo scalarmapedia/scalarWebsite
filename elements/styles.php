@@ -1,2 +1,2 @@
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<link rel="stylesheet" type="text/css" href="/scalar/styles.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo SITE_HOST ?>/styles.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo SITE_HOST ?>/scalar/styles.css">
