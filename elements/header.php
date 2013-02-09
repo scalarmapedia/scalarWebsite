@@ -1,17 +1,17 @@
 
 <blanker>
-	<header>
+	<header id="pageHeader">
 		
 		<logoCont id="scalarlogocont">
 			<logo>
-				<img src="/scalar/null.png" class="scalarLogo" onLoad="scalar.icon(event,'scalarLogo',null,Array(Array('icon_scalar_logo',10,10,0,.8)),['glow',1,4,1],null,scalarSetEvents)">
+				<img src="/scalar/null.png" class="scalarLogo" onLoad="scalar.icon(event,'scalarLogo',null,Array(Array('icon_scalarlogo',5,5,0,.9)),['glow',1,3,1],null,scalarSetEvents)">
 			</logo>
 
 		</logoCont>
 		
 		<txtCont>
 			<txt>
-				Documentation
+				<?php echo PAGE_NAME; ?>
 			</txt>
 		</txtCont>
 		
