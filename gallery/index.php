@@ -1,7 +1,6 @@
 <?php
 
-/**              GALLERY                  */
-
+DEFINE(PAGE_NAME,'Gallery');
 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -27,14 +26,10 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<script src="../js/util.js"></script>
-		<script src="../scalar/js/jsBezier-0.4.js"></script>
-		<script src="../scalar/js/svg.js"></script>
-		
-		<script src="../js/jquery-1.8.3.min.js"></script>
+		<?php require(SITE_ROOT.'/elements/js_code.php'); ?>
 		
 		<script> 	
-			localStorage["currentPage"] = 'about';
+			localStorage["currentPage"] = 'gallery';
 			
 			$(document).ready(function(){
 					setupPage();
@@ -84,10 +79,6 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 					
 					
 					<h2>Keyline</h2>
-					
-					<p>
-						Keyline..
-					</p>
 					
 					<row>
 						<img class="toggleOff" onClick="scalar.toggleGroupFilters('Lemons',0,0,.1);" src="/scalar/null.png" onLoad="scalar.icon(event,'toggleOff_Lemons',null,Array(Array('icon_minus',15,15,0,.7)))">
@@ -167,6 +158,8 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 			    
 				<?php require(SITE_ROOT.'/elements/nav.php'); ?>
 			</section>
+			
+			<?php require(SITE_ROOT.'/elements/footer.php'); ?>
 		</page>
 	</body>
 </html>

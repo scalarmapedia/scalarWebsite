@@ -1,6 +1,6 @@
 <?php
 
-/**              ABOUT - HomePage                    */
+DEFINE(PAGE_NAME,'The SVG Framework'); // Homepage
 
 
 error_reporting(E_ALL);
@@ -27,11 +27,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<script src="/js/util.js"></script>
-		<script src="/scalar/js/jsBezier-0.4.js"></script>
-		<script src="/scalar/js/svg.js"></script>
-		
-		<script src="/js/jquery-1.8.3.min.js"></script>
+		<?php require(SITE_ROOT.'/elements/js_code.php'); ?>
 		
 		<script> 	
 			localStorage["currentPage"] = 'about';
@@ -46,6 +42,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 		<?php require(SITE_ROOT.'/elements/analytics.php'); ?>
 		
 		<?php require(SITE_ROOT.'/elements/fonts.php'); ?>
+		
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	
 	</head>
@@ -56,7 +53,6 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 			
 			<section>
 				<explain>
-				
 					<h1>What is Scalar?</h1>
 					
 					<iconset>				
@@ -67,21 +63,8 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						<img src="/scalar/null.png" onLoad="scalar.icon(event,'hover0_Grey','black',Array(Array('browser_firefox',17.5,17.5,0,.65)),['greyScale',1,1,.4])">
 					</iconset>
 					
-					<p>Scalar is a simple framework for using SVG icons on a website. I ( Chris Thomas ) developed Scalar, whilst working on my own project, <b>Mapedia</b> with my business partner Wilson Stockman. For Mapedia, we needed to
-					use a great number of icons, and we wanted to do so in as efficient a manner as possible.
-					</p>
-					
-					<p>
-					Whilst implementing this, I also thought that being able to specify some effects, such as drop shadows. In my original implementation, these effects were fixed, but in Scalar, they are dynamic and can be animated. Currently Scalar supports <i>Drop Shadow</i>, <i>Glow</i>, <i>Blur</i> and <i>GreyScale</i>.
-					</p>
-
-					<p>
-					To make Scalar as efficient as possible, we remove the SVG wrapping element from each SVG icon. This is just repetition and can be added programatically as Scalar builds each icon from the required fragments. Its a bit like extracting nuts from their shells, we only need the nut, and the shells 
-					can be discarded, saving on download weight.
-					</p>
-					
-					<p>To get each icon to load, we use the onLoad event of &lt;img&gt; elements, which (conveniently) is triggered as the IMG node is displayed in the browser. At this 
-					point Scalar jumps in, creates the required icon, and replaces the original <i>&lt;img&gt;</i> node with a spiffing new <i>&lt;svg veri...&gt;&lt;/svg&gt;</i> node.
+					<p>Scalar is a simple framework for using SVG icons on a website. I ( Chris Thomas ) developed Scalar, whilst working on my own project, <b>Mapedia</b>. For Mapedia, we needed to
+					use a great number of icons, in a image/sprint like manner, but using SVG. I also thought that being able to specify effects, such as drop-shadows and glows would be of use. In my original implementation, these effects were fixed, but in Scalar, they are dynamic and can be animated. Currently Scalar supports <i>Drop-Shadows</i>,<i>Outlines</i>, <i>Glows</i>, <i>Blurs</i> and <i>GreyScale</i> effects.
 					</p>
 					
 					<h2>Scalars is...</h2>
@@ -95,12 +78,20 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 					
 					<h2>Scalars is not...</h2>
 					<ul>
-						<li>A "from scratch" SVG icon drawing library <i>(<a href="http://raphaeljs.com/" target="_blank">look to <b>Raphaël</b> for this</a>)</i></li>
+						<li>A "from scratch" SVG icon drawing library <i>( <a href="http://raphaeljs.com/" target="_blank">look to <b>Raphaël</b> for this</a> )</i></li>
+					</ul>
+					
+					<h2>Requirements</h2>
+					<ul>
+						<li>PHP installed on your webserver</li>
+						<li>Javascript enabled on the viewers web-browser</li>
 					</ul>
 				</explain>
 			    
 				<?php require(SITE_ROOT.'/elements/nav.php'); ?>
 			</section>
+			
+			<?php require(SITE_ROOT.'/elements/footer.php'); ?>
 		</page>
 	</body>
 </html>

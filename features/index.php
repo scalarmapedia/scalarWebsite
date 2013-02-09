@@ -1,6 +1,6 @@
 <?php
 
-/**              FEATURES                    */
+DEFINE(PAGE_NAME,'Features');
 
 
 error_reporting(E_ALL);
@@ -27,14 +27,10 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<script src="../js/util.js"></script>
-		<script src="../scalar/js/jsBezier-0.4.js"></script>
-		<script src="../scalar/js/svg.js"></script>
-		
-		<script src="../js/jquery-1.8.3.min.js"></script>
+		<?php require(SITE_ROOT.'/elements/js_code.php'); ?>
 		
 		<script> 	
-			localStorage["currentPage"] = 'about';
+			localStorage["currentPage"] = 'features';
 			
 			$(document).ready(function(){
 					setupPage();
@@ -55,7 +51,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 			<?php require(SITE_ROOT.'/elements/header.php'); ?>
 			
 			<section>
-				<explain>
+				<explain class="features">
 					<h1>What can Scalar do for you?</h1>
 					
 					<p>
@@ -109,6 +105,8 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 			    
 				<?php require(SITE_ROOT.'/elements/nav.php'); ?>
 			</section>
+			
+			<?php require(SITE_ROOT.'/elements/footer.php'); ?>
 		</page>
 	</body>
 </html>
