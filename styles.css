@@ -1,18 +1,43 @@
+@font-face { font-family: intro;
+	src: url('/fonts/intro/intro_book.otf')
+}
+
+@font-face { font-family: arvo;
+	src: url('/fonts/arvo/Arvo-Regular.ttf')
+}
+@font-face { font-family: arvo_italic;
+	src: url('/fonts/arvo/Arvo-Italic.ttf')
+}
+@font-face { font-family: arvo_bold;
+	src: url('/fonts/arvo/Arvo-Bold.ttf')
+}
+@font-face { font-family: arvo_bold_italic;
+	src: url('/fonts/arvo/Arvo-BoldItalic.ttf')
+}
+
+
 
 * {
-	-webkit-box-sizing: 	border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: 	border-box; /* Firefox, other Gecko */
-	box-sizing: 		border-box; /* Opera/IE 8+ */
+	box-sizing: 		border-box;
+	
+	font-weight: 		normal;
+	font-style:		normal;
+	text-rendering:		optimizeLegibility;
 	
 	border:			0;
-	
 	padding:		0;
 	margin:			0;
+	
+	-webkit-margin-before: 	0;
+	-webkit-margin-after: 	0;
+	
+	-webkit-margin-start: 	0;
+	-webkit-margin-end: 	0;
 }
 
 header, section, footer, aside, nav, article, figure {
 	display: 		block;
-	}
+}
 
 html {
 	overflow-y: 		scroll;	
@@ -23,8 +48,7 @@ body {
 	
 	position:		relative;
 	
-	font-family: 		Open Sans;
-	font-weight:		400;
+	font-family: 		open sans;
 	font-size:		.95rem;
 	color:			hsl(205,5%,80%);
 	line-height:		1em;
@@ -66,8 +90,8 @@ page {
 	
 	position:		relative;
 	
-	border:			0px solid yellow;
-	border-radius:		20px 20px 20px 20px;
+	border:			0px dashed yellow;
+	border-radius:		2rem;
 	
 	margin:			75px auto 0 auto;
 	padding:		0 0 40px 0;
@@ -81,7 +105,7 @@ page {
 
 blanker {
 	width:			1000px;
-	height:			85px;
+	height:			6.2rem;
 
 	position:		fixed;
 	
@@ -90,7 +114,6 @@ blanker {
 	border-radius:		0;
 	
 	margin:			-85px auto 0 auto;
-	padding:		0;
 	
 	background:		hsl(200,30%,12%);
 	
@@ -100,16 +123,15 @@ blanker {
 
 header {
 	width:			1000px;
-	height:			85px;
+	height:			6.2rem;
 
 	position:		fixed;
 	
 	border:			0px solid purple;
 	
-	border-radius:		20px 20px 0 0;
+	border-radius:		2rem 2rem 0 0;
 	
-	margin:			10px auto 0 auto;
-	padding:		5px;
+	margin:			.5rem auto 0 auto;
 	
 	overflow:		hidden;
 	
@@ -132,7 +154,7 @@ gfx {
 
 	display:		block;	
 	float:			left;
-	z-index:		30;
+	z-index:		0;
 }
 gfx svg {
 	width:			1200px;
@@ -143,7 +165,7 @@ gfx svg {
 
 
 fadeout {
-	width:			80%;
+	width:			76%;
 	height:			36px;
 
 	position:		absolute;
@@ -155,9 +177,9 @@ fadeout {
 	margin:			0;
 	padding:		0;
 	
-	background: 		-webkit-gradient(linear, left top, left bottom, from(hsl(207,10%,26%)), to(hsla(207,10%,26%,0))); 	/* Chrome */
-	background-image: 	-ms-linear-gradient( -90deg, hsl(207,10%,26%), hsl(207,10%,26%) 10%, hsla(207,10%,26%,0));		/* IE */
-	background-image: 	linear-gradient(   hsl(207,10%,26%),hsla(207,10%,26%,0)   );						/* Firefox, Opera */
+	background: 		-webkit-gradient(linear, left top, left bottom, from(hsl(207,10%,27%)), to(hsla(207,10%,27%,0))); 	/* Chrome */
+	background-image: 	-ms-linear-gradient( -90deg, hsl(207,10%,27%), hsl(207,10%,27%) 10%, hsla(207,10%,27%,0));		/* IE */
+	background-image: 	linear-gradient(   hsl(207,10%,27%),hsla(207,10%,27%,0)   );						/* Firefox, Opera */
 	
 	display:		block;
 	z-index:		25;
@@ -173,7 +195,7 @@ section {
 	border:			0px solid blue;
 	display:		table;
 			
-	background:		hsl(207,10%,26%);
+	background:		hsl(207,10%,27%);
 	
 	float:			left;
 	z-index:		15;	
@@ -184,52 +206,74 @@ section {
 
 
 logoCont {
-	height:			auto;
-	width:			15%;
+	height:			6.2rem;
+	width:			10.75rem;
 	
-	border:			0px solid orange;
+	position:		relative;
+	
+	border:			0px dashed orange;
 
 	text-align:		left;
 	
 	overflow:		hidden;
 	
-	padding:		0 0 0 15px;
+	padding:		0 0 0 2rem;
 	
 	display:		table-cell;
 }
 logoCont logo {
-	height:			75px;
-	width:			180px;
+	height:			auto;
+	width:			auto;
 	
-	border:			0px solid pink;
+	position:		absolute;
+	top:			0;
+	left:			1rem;
+	
+	border:			0px dashed pink;
 
 	text-align:		left;
 
 	overflow:		hidden;
 	
 	display:		block;
+	float:			left;
+	z-index:		5;
 }
 .scalarLogo {
-	width:			180px;
-	height:			180px;
+	width:			10.75rem;
+	height:			10.75rem;
 	
-	border:			0px solid red;
+	border:			0px dashed red;
 	
-	margin:			-49px 0 0  0;
+	margin:			-1.5rem 0 0 0;
 	
 	display:		block;
 }
+.scalarLogo #arrowL,
+.scalarLogo #arrowR {
+	fill:			hsl(10,100%,50%);
+	stroke:			hsl(50,100%,55%);
+	stroke-width:		.8;
+}
+.scalarLogo #point {
+	fill:			hsl(0,100%,45%);
+	stroke:			hsl(60,100%,70%);
+	stroke-width:		1.3;
+}
+.scalarLogo #scalarLogoText {
+	fill:			hsl(0,0%,100%);
+	stroke:			hsl(200,50%,35%);
+	stroke-width:		1.5;
+}
+
 
 header txtCont {
 	width:			auto;
 	height:			1em;
 	
 	vertical-align:		middle;
-	
-	margin:			0;
-	padding:		0;
 		
-	border:			0px solid blue;
+	border:			0px dashed blue;
 		
 	display:		table-cell;
 }
@@ -237,24 +281,58 @@ header txt {
 	width:			auto;
 	height:			1em;
 	
-	font-family: 		Open Sans;
-	font-weight:		600;
-	font-style:		italic;
-	font-size:		170%;
-	color:			hsla(205,0%,100%,.8);
+	font-family:		intro;
+	font-weight:		normal;
+	font-style:		normal;
+	
+	letter-spacing:		0rem;
+	font-size:		1.5rem;
+	color:			hsla(205,50%,90%,.90);
 	line-height:		1em;
 	text-align:		left;
 	vertical-align:		top;
+	white-space:		nowrap;
 	
 	cursor:			default;
 
-	border:			0px solid red;
+	border:			0px dashed red;
 	
-	margin:			.8em 0 0 0;
-	padding:		0 0 0 0;
+	margin:			1.05rem 0 0 .6rem;
+	padding:		0;
 	
 	display:		table;
 }
+
+
+
+
+h1, h2 {
+	font-family: 		arvo_bold;
+	width:			auto;
+	
+	line-height:		1em;
+	text-align:		left;
+	vertical-align:		top;
+	white-space:		nowrap;
+	
+	display:		table;
+}
+h1 {
+	font-size:		1.5rem;
+	color:			hsl(200,45%,97%);
+	
+	padding:		0;
+	margin:			0 0 .5rem 0;
+	
+}
+h2 {
+	font-size:		1.25rem;
+	color:			hsl(200,45%,85%);
+	
+	padding:		0;
+	margin:			.5rem 0 .5rem 0;
+}
+
 
 
 
@@ -268,66 +346,120 @@ explain {
 	
 	border:			0px dashed yellow;
 	
-	padding:		2em 0 2em 1.6em;
+	padding:		3.2rem 0 2em 1.6em;
 	
 	display:		table-cell;
 }
 
+explain h1 {
+	text-shadow: 		.175rem .175rem hsla(200,50%,15%,.7);
+	margin:			0 0 .2rem 0;	
+}
+explain h2 {
+	text-shadow: 		.175rem .175rem hsla(200,50%,18%,.7);
+	position:		relative;
+	margin:			.5rem 0 .2rem 0;
+}
 
 
 
-
-
-
-
-
-h1, h2 {
-	font-family: 		Open Sans;
-	line-height:		1em;
-	text-align:		left;
-	vertical-align:		top;
+/* ============================== Questions  ========================*/
+.questions {
+	border:			0px dashed red;
+}
+.questions h2 {
+	height:			2rem;
+	font-size:		1rem;
+	background:		transparent;
+	line-height:		2em;
 	
-	padding:		1em 0 .4em 0;
+	padding:		0 .6rem 0 0;
+	margin:			0 0 .1rem 0;
+	
+	display:		block;
 }
-h1 {
-	font-weight:		700;
-	font-size:		130%;
-	color:			hsl(205,5%,97%);
+.questions h2:nth-of-type(1) {
+	margin:			1.1rem 0 .3rem 0;
 }
-h2 {
+
+.questions h2 icon {
+	width:			2rem;
+	height:			2rem;
+	
+	position:		relative;
+	
+	border-radius:		50%;
+	background:		hsla(200,50%,50%,1);
+	
+	margin:			0 .3rem 0 0;
+	
+	display:		inline-table;
+}
+.questions h2 icon ques {
+	width:			100%;
+	height:			1em;
+	
+	font-family: 		open sans;
+	font-size:		1.5rem;
 	font-weight:		600;
-	font-size:		120%;
-	color:			hsl(205,5%,93%);
+	font-style:		normal;
+	text-align:		center;
+	line-height:		1em;
+	
+	position:		absolute;
+	top:			-.1em;
+	bottom:			0;
+	left:			0;
+	right:			0;
+	
+	margin:			auto;
+	
+	border:			0 dashed black;
+		
+	display:		table;
 }
 
-h2 svg {
-	width:			40px;
-	height:			40px;
+.questions p {	
+	padding: 		0 1.5rem 1.5rem 2.5rem;
+}
+
+
+/* ======================= Features Page Headings ========================*/
+.features h2 {	
+	border-radius:		.8rem 0 .8rem .8rem;
+	padding:		.2rem .9rem .3rem 3rem;
+}
+
+.features h2 svg {
+	width:			3rem;
+	height:			3rem;
 	
-	margin:			-12px .5em 0 0;
+	position:		absolute;
+	top:			-.65rem;
+	left:			-.3rem;
+	
+	margin:			0;
 	
 	display:		inline-block;
 	float:			left;
 }
-h2 svg #discField {
+.features h2 svg #discField {
 	Fill:			hsl(15,100%,45%);
 }
-h2 svg #starField,
-h2 svg #starBorder {
+.features h2 svg #starField,
+.features h2 svg #starBorder {
 	fill:			white;
 }
 
 
 
-b {
-	font-family: 		Open Sans;
+b {	
 	font-weight:		600;
 	font-style:		normal;
 }
 
 i {
-	font-family: 		Open Sans;
-	font-weight:		600;
+	font-family: 		open sans;
 	font-style:		italic;
 }
 
@@ -340,10 +472,9 @@ p {
 	width:			100%;
 	height:			auto;
 	
-	font-family: 		Open Sans;
-	font-size:		100%;
+	font-size:		.95rem;
 	color:			hsla(205,20%,85%,.8);
-	line-height:		1.3em;
+	line-height:		1.4em;
 	text-align:		justify;
 	vertical-align:		top;
 	text-indent:		0;
@@ -354,10 +485,6 @@ p {
 	padding:		0 1.5rem 1.5rem 0;
 	
 	display: block;
-	-webkit-margin-before: 	0em;
-	-webkit-margin-after: 	0em;
-	-webkit-margin-start: 	0px;
-	-webkit-margin-end: 	0px;
 }
 p b {
 	color:			hsl(205,5%,100%);
@@ -405,7 +532,6 @@ iconset svg {
 ul {
 	width:			100%;
 	
-	font-family: 		Open Sans;
 	color:			hsl(205,5%,90%);
 	line-height:		1em;
 	text-align:		left;
@@ -413,7 +539,7 @@ ul {
 	
 	border:			0px solid blue;
 	
-	padding:		0 0 1em 6em;
+	padding:		0rem 0 1.5rem 3rem;
 }
 ul li {
 	color:			hsl(205,35%,85%);
@@ -432,59 +558,159 @@ ul li {
 
 /*=================================================== NAVIGATION MENU ==================================================*/
 nav {
-	width:			20%;
+	width:			20rem;
 	
 	border:			0px dashed green;
 	
 	vertical-align:		top;
 	
-	padding:		0;
-	margin:			0;
+	padding:		2.5rem 1rem 0 1rem;
 	
 	display:		table-cell;
 }
 
 nav cont {
-	width:			13%;
-	
-	position:		fixed;
+	width:			13rem;
 	
 	border:			0px dashed red;
+	border-radius:		1.2rem;
 	
-	vertical-align:		top;
+	background:		hsla(200,100%,70%,.075);
 	
-	padding:		0;
-	margin:			0;
+	margin:			.5rem;
 	
 	display:		table;
 }
 
+
+
+/* =================== ZIP Button Download ====================*/
+.downloadButtonArea {
+	width:			13rem;
+	
+	border:			0px dashed white;
+	
+	padding:		0;
+	margin:			2rem .5rem .5rem .5rem;
+	
+	background:		transparent;
+	
+	display:		table-cell;
+}
+
+.downloadButtonArea a {
+	width:			9rem;
+	height:			9rem;
+	
+	position:		relative;
+	
+	border:			0x dashed yellow;
+	
+	margin:			1rem 2rem 0 2rem;
+		
+	display:		block;
+}
+
+.downloadButtonArea #downloadButton {
+	width:			9rem;
+	height:			9rem;
+	
+	position:		absolute;
+	top:			0;
+	left:			0;
+	
+	border:			0px dashed black;
+	
+	fill:			hsl(200,50%,35%);
+	stroke:			hsl(200,60%,55%);
+	stroke-width:		1.5;
+	
+	display:		block;
+}
+
+.downloadButtonArea a H1,
+.downloadButtonArea a H2 {
+	width:			9rem;
+	height:			auto;
+	
+	position:		absolute;
+	top:			3.2rem;
+	left:			0;
+	
+	font-size:		1rem;
+	text-align:		center;
+	
+	border:			0px dashed blue;
+	
+	display:		block;
+}
+.downloadButtonArea a H2 {
+	top:			4rem;
+	font-size:		.8rem;
+}
+.downloadButtonArea #downloadButtonArrow {
+	width:			2.5rem;
+	height:			2.5rem;
+	
+	position:		absolute;
+	top:			6rem;
+	left:			3.25rem;
+	
+	border:			0px dashed black;
+	
+	display:		block;
+}
+
+
+@keyframes rosette {
+	0% 	{	stroke-width:1; stroke:hsl(210,60%,55%);	}
+	50% 	{	stroke-width:3; stroke:hsl(190,60%,90%);	}
+	100% 	{	stroke-width:1; stroke:hsl(210,60%,55%);	}
+}
+.downloadButtonArea #downloadButton:hover {
+	animation: 		rosette .3s;
+}
+
+
+@keyframes zipSpin {
+	0% 	{	transform: translate(0rem,0rem);	}
+	50% 	{	transform: translate(0rem,.3rem);	}
+	100% 	{	transform: translate(0rem,0rem);	}
+}
+.downloadButtonArea a:hover {
+	animation: 		zipSpin .5s;
+}
+
+
+
+
 nav cont ul {
 	width:			100%;
 	
-	font-family: 		Open Sans;
 	line-height:		1.3em;
 	text-align:		left;
 	vertical-align:		top;
 	
-	border:			0px solid green;
+	border:			0px dashed green;
 	
 	list-style-type:	none;
 	
-	padding:		0 0 1em 8%;
+	padding:		0 0 3rem .75rem;
 	
 	display:		table;
 }
 nav cont ul li {
+	width:			100%;
+	
 	color:			hsl(205,35%,85%);
-	font-size:		90%;
-	line-height:		1.2em;
+	font-size:		86%;
+	line-height:		1.3em;
 	text-align:		left;
 	vertical-align:		top;
 	
-	margin:			2em 0 0 0;
+	margin:			1.5em 0 0 0;
 	
-	border:			1px solid hsla(200,0%,70%,0);
+	border:			0px dashed pink;
 }
 nav cont ul li a {
 	width:			100%;
@@ -493,26 +719,29 @@ nav cont ul li a {
 	display:		table;
 }
 nav ul li h1 {
-	width:			70%;
+	width:			80%;
 	
-	font-weight:		700;
-	font-size:		140%;	
+	font-size:		1.05rem;
 	color:			hsla(200,50%,85%,.7);
 	line-height:		1em;
 	text-align:		left;
 	vertical-align:		top;
+	text-shadow: 		0 0 rgba(0,0,0,0);
+	background:		hsla(195,70%,85%,0);
+	letter-spacing:		0;
 	
-	border:			0px solid red;
+	border:			0px dashed black;
 	
 	list-style-type:	none;
 	
-	padding:		.4em 0 .3em .6em;
+	padding:		.4em 0 .3em .15rem;
+	margin:			0;
 	
 	display:		table;
 }
 nav ul li:hover h1 {
 	color:			hsl(205,100%,98%);
-	text-shadow: 		3px 3px 1px hsla(200,40%,5%,1);
+	text-shadow: 		.2rem .2rem 0 hsla(200,50%,15%,1);
 }
 
 .selected h1 {
@@ -520,7 +749,7 @@ nav ul li:hover h1 {
 }
 .selected:hover h1 {
 	color:			hsl(35,100%,80%);
-	text-shadow: 		3px 3px 1px hsla(200,40%,5%,1);
+	text-shadow: 		.2rem .2rem 0 hsla(200,50%,15%,1);
 }
 
 
@@ -569,6 +798,13 @@ nav svg #icon_scroll {
 
 
 
+/*=================================================== DOWNLOAD BUTTON ==================================================*/
+
+
+
+
+
+
 
 
 row {
@@ -580,7 +816,7 @@ row {
 	border:			0px solid red;
 	border-radius:		0 0 90px 0;
 	
-	margin:			0 auto 0 auto;
+	margin:			0 auto 1rem auto;
 	padding:		0 30px;
 	
 	background:		hsla(212,50%,5%,.2);
@@ -592,14 +828,14 @@ row {
 
 
 .toggleOn, .toggleOff {
-	width:			30px;
-	height:			30px;
+	width:			3rem;
+	height:			3rem;
 	
 	position:		absolute;
-	top:			20px;
-	left:			2rem;
+	top:			1rem;
+	left:			1rem;
 	
-	border-radius:		50%;
+	border-radius:		50% 50% 0 0;
 	
 	margin:			0;
 	padding:		0;
@@ -611,8 +847,9 @@ row {
 	display:		table;
 }
 .toggleOn {
-	top:			55px;
+	top:			4rem;
 	background:		hsla(120,30%,30%,1);
+	border-radius:		0 0 50% 50%;
 }
 
 
@@ -625,7 +862,6 @@ row {
 error {
 	width:			70%;
 	
-	font-family: 		Open Sans;
 	font-size:		140%;	
 	color:			hsla(200,50%,85%,.95);
 	line-height:		1.3em;
@@ -644,7 +880,6 @@ error {
 error p {
 	width:			100%;
 	
-	font-family: 		Open Sans;
 	font-size:		100%;	
 	color:			hsla(200,50%,98%,.98);
 	line-height:		1.4em;
@@ -658,12 +893,10 @@ error p {
 	
 	display:		table;
 }
-error H1 {
+error h1 {
 	width:			100%;
 	
-	font-family: 		Open Sans;
-	font-weight:		700;
-	font-size:		170%;	
+	font-size:		1.6rem;	
 	color:			hsla(200,50%,98%,.98);
 	line-height:		1em;
 	text-align:		center;
@@ -677,7 +910,39 @@ error H1 {
 }
 
 
+/* ====================================================== INSTALLATION ======================================================== */
+explain shell {
+	width:			95%;
+	height:			auto;
 
+	font-family: 		Sanchez;
+	font-size:		85%;
+	color:			hsla(205,20%,85%,1);
+	line-height:		1.6em;
+	text-align:		left;
+	vertical-align:		top;
+	white-space:		normal;
+	
+	border:			0px dashed purple;
+	
+	margin:			0 0 1.3em 0;
+	padding:		1em;
+	
+	background:		hsla(200,0%,0%,.2);
+	
+	display:		table;
+}
+
+#simpleDisc {
+	width:			4rem;
+	height:			4rem;
+	
+	margin:			1rem 0 0 0;
+	
+	fill:			orange;
+	
+	display:		block;
+}
 
 
 
@@ -833,20 +1098,18 @@ docs spc {
 
 docs defBlock defBlock h1,
 docs defBlock defBlock h2 {
-	font-family: 		Open Sans;
 	line-height:		1em;
 	text-align:		left;
 	vertical-align:		top;
 	
 	padding:		0 0 .6em 1.5em;
+	margin:			0 0 0 0;
 }
 docs defBlock defBlock h1 {
-	font-weight:		700;
 	font-size:		100%;
 	color:			hsl(205,5%,97%);
 }
 docs defBlock defBlock h2 {
-	font-weight:		600;
 	font-size:		100%;
 	color:			hsl(205,5%,93%);
 }
@@ -890,7 +1153,6 @@ docs p {
 	width:			100%;
 	height:			auto;
 	
-	font-family: 		Open Sans;
 	font-weight:		400;
 	font-size:		100%;
 	color:			hsla(205,20%,85%,.8);
@@ -933,7 +1195,6 @@ docs examples p {
 	width:			100%;
 	height:			auto;
 	
-	font-family: 		Open Sans;
 	font-weight:		400;
 	font-size:		100%;
 	color:			hsla(205,20%,85%,.8);
@@ -1006,7 +1267,7 @@ docmenu {
 docsNav {
 	width:			19%;
 	height:			75vh;
-	
+
 	position:		absolute;
 	top:			11px;
 	left:			-201px;
@@ -1041,28 +1302,19 @@ docsNav cont {
 	display:		block;
 }
 .docsNavClosed cont {
-
 	opacity:		0;
-	
 	transition: 		opacity ease-in-out .5s;
-	-webkit-transition: 	opacity ease-in-out .5s;
-	-moz-transition: 	opacity ease-in-out .5s;
-	-o-transition: 		opacity ease-in-out .5s;
 }
 .docsNavOpen cont {
 	opacity:		1;
-	
 	transition: 		opacity ease-in-out .5s;
-	-webkit-transition: 	opacity ease-in-out .5s;
-	-moz-transition: 	opacity ease-in-out .5s;
-	-o-transition: 		opacity ease-in-out .5s;
 }
+
 
 docsNav cont ul {
 	width:			180px;
 	
-	font-family: 		Open Sans;
-	font-size:		80%;
+	font-size:		100%;
 	
 	color:			hsl(205,5%,90%);
 	line-height:		1em;
@@ -1072,7 +1324,7 @@ docsNav cont ul {
 	border:			0px dashed cyan;
 	border-radius:		15px;
 		
-	padding:		0 .5em .5em .5em;
+	padding:		.3em .5em .5em .9em;
 	margin:			0 0 1em 0;
 	
 	background:		hsla(210,10%,80%,.1);
@@ -1082,7 +1334,7 @@ docsNav cont ul {
 docsNav cont ul li {
 	width:			auto;
 	border:			0px dashed yellow;	
-	padding:		0 .5em 0 .5em;
+	padding:		0;
 	display:		table;
 }
 docsNav cont ul a {
@@ -1090,21 +1342,189 @@ docsNav cont ul a {
 	white-space:		nowrap;
 }
 docsNav cont ul h1 {
-	font-family: 		Open Sans;
-	font-weight:		700;
-	padding: 		.4em 0 .4em 0;
+		
+	font-family:		Sanchez;
+	font-size:		97%;
+	padding: 		.1em 0 .1em 0;
+	margin:			0 0 0 0;
 }
 docsNav cont ul h2 {
-	font-family: 		Open Sans;
-	font-weight:		600;
-	padding: 		.4em 0 .6em 1em;
+		
+	font-family:		Sanchez;
+	font-size:		95%;
+	padding: 		.1em 0 .2em .5em;
+	margin:			0 0 0 0;
 }
+
 
 docsNav cont ul ul {
 	border:			0px dashed green;
 	border-radius:		0;
 	
-	padding:		.2em .5em .4em 2em;
+	padding:		.2em .5em .4em 1em;
 	background:		none;
 }
+
+footer {
+	width:			100%;
+	height:			1.4em;
+	border:			0px dashed red;
+	padding:		.5rem 0 0 0;
+	display:		table;
+}
+
+
+
+/* ======================================================== SVG ICON GALLERY ===========================================================*/
+
+#svgIconGallery {
+	width:			65vw;
+	height:			auto;
+	
+	position:		absolute;
+	top:			5vh;
+	
+	border:			.15rem solid black;
+	border-radius:		1rem;
+	
+	background:		hsl(200,15%,58%);
+	
+	padding:		1.5rem .6rem 1.1rem 1.2rem;
+		
+	display:		block;
+	float:			left;
+	z-index:		50;
+}
+.svgIconGallery_IN {
+	left:			-100vw;
+	opacity:		0;
+	transition:		left 0ms linear 300ms, opacity 300ms ease-in-out 5ms;
+}
+.svgIconGallery_OUT {
+	left:			17.5vw;
+	opacity:		1;
+	transition:		left 0ms linear 0ms, opacity 300ms ease-in-out 0ms;
+}
+
+
+#svgIconGallery galleryCont {
+	width:			100%;
+	height:			80vh;
+	
+	overflow-x:		hidden;
+	overflow-y:		scroll;
+	
+	padding:		0 .3rem 0 0;
+	
+	border:			0px dashed blue;
+	display:		block;
+}
+
+#svgIconGallery icons {
+	width:			100%;
+	height:			100%;
+	
+	border:			0px dashed yellow;
+	
+	display:		table;
+}
+
+#svgIconGallery icon {
+	width:			7rem;
+	height:			8rem;
+	
+	border:			0px dashed blue;
+	border-radius:		.5rem;
+	
+	padding:		.2rem 0 .3rem 0;
+	margin:			0 .2rem .2rem 0;
+	
+	background:		hsla(0,0%,0%,.4);
+	
+	display:		inline-block;
+}
+#svgIconGallery icon svg {
+	width:			6rem;
+	height:			6rem;
+	
+	border:			0px dashed pink;
+	
+	display:		table;
+}
+
+#svgIconGallery icon txt {
+	width:			100%;
+	height:			1.3em;
+	
+	font-size:		.7rem;
+	
+	border:			0px dashed pink;
+	
+	overflow: 		hidden;
+	text-overflow: 		ellipsis;
+	
+	display:		table;
+}
+
+
+#svgIconGallery close {
+	width:			1.2rem;
+	height:			1.2rem;
+	
+	position:		absolute;
+	top:			.3rem;
+	right:			.1rem;
+	
+	display:		block;
+}
+#svgIconGallery close svg {
+	width:			1rem;
+	height:			1rem;
+	opacity:		.7;
+	display:		block;
+}
+#svgIconGallery close:hover svg {
+	opacity:		1;
+}
+#svgIconGallery close:active svg {
+	opacity:		.3;
+}
+
+
+#svgCodeExample {
+	width:			97.5%;
+	height:			1.6rem;
+	
+	color:			white
+	font-size:		.75rem;
+	line-height:		1.3em;
+	
+	border-radius:		.3rem;
+	
+	background:		hsla(200,50%,10%,.4);
+	
+	padding:		.3em 0 0 0;
+	
+	margin:			.9rem 0 0 0;
+	display:		table;
+}
+
+#svgIconGallery galleryCont::-webkit-scrollbar {
+	width: 				.7rem;
+}
+#svgIconGallery galleryCont::-webkit-scrollbar-track {
+	margin:				0;
+	-webkit-box-shadow: 		inset 0 0 .8rem hsla(210,10%,20%,.6);
+	border-radius: 			.5rem;
+}
+#svgIconGallery galleryCont::-webkit-scrollbar-track {
+	margin:				.6rem .4rem .6rem 0;
+	-webkit-box-shadow: 		inset 0 0 .8rem hsla(210,10%,20%,.6);
+	border-radius: 			.5rem;
+}
+#svgIconGallery galleryCont::-webkit-scrollbar-thumb {
+    	border-radius: 			.5rem;
+    	background:			hsla(200,20%,85%,.8);
+}
+
 
