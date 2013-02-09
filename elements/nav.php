@@ -86,7 +86,7 @@
 			<img src="/scalar/null.png" onLoad="scalar.icon(event,'downloadButton',null,Array(Array('icon_rosette',0,0,0,1)),['dropShadow',0,0,9,9,0.9,Array(200,50,4)])">
 			<H1>Scalar.Zip</H1>
 			<H2>Download</H2>
-			<img src="/scalar/null.png" onLoad="scalar.icon(event,'downloadButtonArrow',null,Array(Array('icon_arrow_down',0,0,0,1)),['dropShadow',0,0,9,9,0.9,Array(200,50,4)])">
+			<img src="/scalar/null.png" onLoad="scalar.icon(event,'downloadButtonArrow',null,Array(Array('icon_arrow',0,0,180,1)),['dropShadow',0,0,9,9,0.9,Array(200,50,4)])">
 		</a>
 	</cont>
 </nav>         
