@@ -5,10 +5,8 @@ function isArray(obj) {
 	return (obj && obj.constructor.toString().indexOf("Array") > -1)?true:false;
 }
 
-
 function setMenuState() {
 	var s = "#nav_"+localStorage["currentPage"];
-	console.log(s);
 	$(s).addClass("selected");	
 }
 
@@ -29,7 +27,10 @@ function scalarSetEvents() {
 	$("[id*=hover0_]").mouseover( {setAs:0}, scalar.toggleFilter );
 	$("[id*=hover0_]").mouseout( {setAs:1}, scalar.toggleFilter );
 	
-	$("[id*=click_]").click( scalar.toggleFilter );		
+	$("[id*=click_]").click( scalar.toggleFilter );	
+	
+	$('#scalarlogocont').click( scalar.gallery );
+	//console.log('Im adding these events!');
 }
 		
 function setupPage(){
