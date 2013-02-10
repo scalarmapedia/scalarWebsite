@@ -83,13 +83,13 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						<img class="toggleOff" onClick="scalar.toggleGroupFilters('Lemons',0,0,.1);" src="/scalar/null.png" onLoad="scalar.icon(event,'toggleOff_Lemons',null,Array(Array('icon_minus',15,15,0,.7)))">
 						<img class="toggleOn" onClick="scalar.toggleGroupFilters('Lemons',1,0,.1);" src="/scalar/null.png" onLoad="scalar.icon(event,'toggleOn_Lemons',null,Array(Array('icon_plus',15,15,0,.7)))">
 					
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline0','Lemons',Array(Array('icon_contact',15,15,0,.7)),['keyline',null,2,0,Array(0,100,0),1])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline0','Lemons',Array(Array('icon_@',20,20,0,.6)),['keyline',null,2,0,Array(0,100,0),1])">
 					
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline1','Lemons',Array(Array('icon_contact',15,15,0,.7)),['keyline',null,5,8,Array(200,100,1),.5])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline1','Lemons',Array(Array('icon_@',20,20,0,.6)),['keyline',null,5,8,Array(200,100,1),.5])">
 						
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline2','Lemons',Array(Array('icon_contact',15,15,0,.7)),['keyline',null,3,0,Array(0,100,30),.15])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline2','Lemons',Array(Array('icon_@',20,20,0,.6)),['keyline',null,3,0,Array(0,100,30),.15])">
 						
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline3','Lemons',Array(Array('icon_contact',15,15,0,.7)),['keyline',null,4,6,Array(15,100,50),.05])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_Keyline3','Lemons',Array(Array('icon_@',20,20,0,.6)),['keyline',null,4,6,Array(15,100,50),.05])">
 					</row>
 
 					
@@ -105,13 +105,13 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						<img class="toggleOff" onClick="scalar.toggleGroupFilters('red',0,0,.015);" src="/scalar/null.png" onLoad="scalar.icon(event,'toggleOff_Red',null,Array(Array('icon_minus',15,15,0,.7)))">
 						<img class="toggleOn" onClick="scalar.toggleGroupFilters('red',1,0,.015);" src="/scalar/null.png" onLoad="scalar.icon(event,'toggleOn_Red',null,Array(Array('icon_plus',15,15,0,.7)))">
 						
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy1','red',Array(Array('icon_html5',20,20,0,.6)),['glow',1,2,1])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy1','red',Array(Array('web_html5',20,20,0,.6)),['glow',1,2,1])">
 						
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy2','red',Array(Array('icon_html5',20,20,0,.6)),['glow',1,5,.5])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy2','red',Array(Array('web_html5',20,20,0,.6)),['glow',1,5,.5])">
 						
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy3','red',Array(Array('icon_html5',20,20,0,.6)),['glow',1,8,.15])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy3','red',Array(Array('web_html5',20,20,0,.6)),['glow',1,8,.15])">
 						
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy4','red',Array(Array('icon_html5',20,20,0,.6)),['glow',1,12,.05])">		
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'click_mrGlowy4','red',Array(Array('web_html5',20,20,0,.6)),['glow',1,12,.05])">		
 					</row>
 					
 					
