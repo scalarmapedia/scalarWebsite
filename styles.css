@@ -165,11 +165,11 @@ gfx svg {
 
 
 fadeout {
-	width:			76%;
-	height:			36px;
+	width:			98%;
+	height:			40px;
 
 	position:		absolute;
-	bottom:			-46px;
+	bottom:			-48px;
 	left:			0px;
 	
 	border:			0px dashed purple;
