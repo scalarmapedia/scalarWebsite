@@ -18,10 +18,14 @@ function getZip() {
 	}
 		
 	exec('wget "https://github.com/scalarmapedia/scalar/archive/master.zip"');
-	exec('unzip master.zip');
+	
+	if (file_exists('master.zip')) { exec('unzip master.zip'); } else { exec('unzip master'); }
+
 	exec('mv scalar-master scalar');
 	exec('zip -r9 tmp.zip scalar');
-	exec('rm master.zip');
+
+	if (file_exists('master.zip')) { exec('rm master.zip'); } else { exec('rm master'); }
+
 	exec('chown root:www '.PATH.'tmp.zip');
 	exec('mv tmp.zip scalar.zip');
 	exec('chmod 740 '.PATH.'scalar.zip');
