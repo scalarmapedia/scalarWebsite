@@ -47,7 +47,7 @@
 	</cont>
 	
 	<cont class="downloadButtonArea">
-		<a href="/zip/scalar.zip">
+		<a href="/zip/scalar.zip" onClick="_gaq.push(['_trackEvent', 'Download', 'scalar.zip', 'Current scalar.zip file downloaded']);"">
 			<img src="/scalar/null.png" onLoad="scalar.icon(event,'downloadButton',null,Array(Array('icon_rosette',0,0,0,1)),['dropShadow',0,0,9,9,0.9,Array(200,50,4)])">
 			<H1>Scalar.Zip</H1>
 			<H2>Download</H2>
