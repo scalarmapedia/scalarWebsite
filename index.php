@@ -84,9 +84,6 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						<li>PHP installed on your webserver</li>
 						<li>Javascript enabled on the viewers web-browser</li>
 					</ul>
-					
-					<iframe src="http://player.vimeo.com/video/59851946" width="310" height="181" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-			
 				</explain>
 			    
 				<?php require(SITE_ROOT.'/elements/nav.php'); ?>
