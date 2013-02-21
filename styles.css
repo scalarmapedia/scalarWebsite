@@ -60,7 +60,7 @@ body {
 	background:		hsl(200,30%,12%);
 	
 	margin:			0;
-	padding:		10px 0 20px 0;
+	padding:		15px 0 20px 0;
 			
 	z-index:		0;
 }
@@ -93,13 +93,66 @@ page {
 	border:			0px dashed yellow;
 	border-radius:		2rem;
 	
-	margin:			75px auto 0 auto;
-	padding:		0 0 40px 0;
-		
+	margin:			0 auto 0 auto;
+	padding:		75px 0 40px 0;
+	
 	background:		hsl(207,10%,27%);
 		
 	display:		table;
 }
+
+
+
+/*==================== BG PATTERN PAGE =====================*/
+page gfx {
+	width:			100%;
+	height:			auto;
+
+	position:		fixed;
+	top:			0px;
+	left:			0px;
+	right:			0px;
+	
+	border:			0px dashed blue;
+
+	opacity:		.02;
+
+	margin:			0 auto;
+	
+	display:		block;	
+	float:			left;
+	z-index:		0;
+}
+page gfx cont {
+	width:			1000px;
+	height:			auto;
+	
+	position:		absolute;
+	left:			0px;
+	right:			0px;
+	
+	border:			0px dashed yellow;
+
+	opacity:		1;
+
+	margin:			0 auto;
+	
+	overflow:		hidden;
+	
+	display:		block;	
+	float:			left;
+}
+page gfx cont svg {
+	width:			2300px;
+	height:			2300px;
+	
+	position:		relative;
+	top:			-950px;
+	left:			-1150px;
+	
+	display:		block;
+}
+
 
 
 
@@ -113,7 +166,7 @@ blanker {
 	
 	border-radius:		0;
 	
-	margin:			-85px auto 0 auto;
+	margin:			-90px auto 0 auto;
 	
 	background:		hsl(200,30%,12%);
 	
@@ -131,7 +184,7 @@ header {
 	
 	border-radius:		2rem 2rem 0 0;
 	
-	margin:			.5rem auto 0 auto;
+	margin:			12px auto 0 auto;
 	
 	overflow:		hidden;
 	
@@ -140,28 +193,41 @@ header {
 	
 	display:		block;
 }
-gfx {
-	width:			1200px;
-	height:			1200px;
-	
+
+
+/*==================== BG PATTERN HEADER =====================*/
+header gfx {
+	width:			100%;
+	height:			auto;
+
 	position:		absolute;
-	top:			-320px;
-	left:			-60px;
+	top:			0px;
+	left:			0px;
+	right:			0px;
 	
-	border:			0px solid blue;
+	border:			0px dashed blue;
 
 	opacity:		.075;
 
+	margin:			0 auto;
+	
 	display:		block;	
 	float:			left;
 	z-index:		0;
 }
-gfx svg {
-	width:			1200px;
-	height:			1200px;
+header gfx svg {
+	width:			2300px;
+	height:			2300px;
+	
+	position:		relative;
+	top:			-950px;
+	left:			-1151px;
 	
 	display:		block;
 }
+
+
+
 
 
 fadeout {
@@ -187,15 +253,16 @@ fadeout {
 
 
 section {
+	width:			1000px;
+		
 	position:		relative;
 	top:			0px;
 	left:			0px;
 	
-	width:			100%;
 	border:			0px solid blue;
 	display:		table;
 			
-	background:		hsl(207,10%,27%);
+	background:		hsla(207,10%,27%,.2);
 	
 	float:			left;
 	z-index:		15;	
@@ -203,31 +270,32 @@ section {
 
 
 
-
-
+/*==================== SCALAR LOGO =====================*/
 logoCont {
-	height:			6.2rem;
-	width:			10.75rem;
+	height:			14.5rem;
+	width:			14.5rem;
 	
-	position:		relative;
+	position:		absolute;
+	top:			0px;
+	left:			1rem;
 	
 	border:			0px dashed orange;
 
 	text-align:		left;
-	
-	overflow:		hidden;
-	
+		
 	padding:		0 0 0 2rem;
 	
-	display:		table-cell;
+	display:		block;
+	float:			left;
+	z-index:		30;
 }
 logoCont logo {
-	height:			auto;
-	width:			auto;
+	width:			14.5rem;
+	height:			14.5rm;
 	
 	position:		absolute;
 	top:			0;
-	left:			1rem;
+	left:			0;
 	
 	border:			0px dashed pink;
 
@@ -240,12 +308,12 @@ logoCont logo {
 	z-index:		5;
 }
 .scalarLogo {
-	width:			10.75rem;
-	height:			10.75rem;
+	width:			14.5rem;
+	height:			14.5rem;
 	
 	border:			0px dashed red;
 	
-	margin:			-1.5rem 0 0 0;
+	margin:			-2.3rem 0 0 0;
 	
 	display:		block;
 }
@@ -266,15 +334,18 @@ logoCont logo {
 	stroke-width:		1.5;
 }
 
-
 header txtCont {
 	width:			auto;
-	height:			1em;
+	height:			100%;
+	
+	position:		absolute;
+	top:			0px;
+	left:			14.75rem;
 	
 	vertical-align:		middle;
 		
 	border:			0px dashed blue;
-		
+	
 	display:		table-cell;
 }
 header txt {
@@ -286,7 +357,7 @@ header txt {
 	font-style:		normal;
 	
 	letter-spacing:		0rem;
-	font-size:		1.5rem;
+	font-size:		1.9rem;
 	color:			hsla(205,50%,90%,.90);
 	line-height:		1em;
 	text-align:		left;
@@ -297,7 +368,7 @@ header txt {
 
 	border:			0px dashed red;
 	
-	margin:			1.05rem 0 0 .6rem;
+	margin:			3rem 0 0 0;
 	padding:		0;
 	
 	display:		table;
@@ -1287,7 +1358,7 @@ docsNav {
 	height:			75vh;
 
 	position:		absolute;
-	top:			11px;
+	top:			100px;
 	left:			-201px;
 	
 	border:			0px dashed black;
@@ -1392,17 +1463,17 @@ footer {
 }
 
 
-/*======================================== MEDIA QUERIES ======================================================*/
+/*========================================================= MEDIA QUERIES =============================================================*/
 @media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
 	only screen and (-o-min-device-pixel-ratio: 13/10),
 	only screen and (min-resolution: 120dpi) {
 	
 	.toggleOn, .toggleOff {
-		width:			3rem;
-		height:			3rem;
+		width:			4rem;
+		height:			4rem;
 		
 		position:		absolute;
-		top:			1rem;
+		top:			.5rem;
 		left:			1rem;
 		
 		border-radius:		50% 50% 0 0;
@@ -1417,9 +1488,17 @@ footer {
 		display:		table;
 	}
 	.toggleOn {
-		top:			4rem;
+		top:			4.5rem;
 		background:		hsla(120,30%,30%,1);
 		border-radius:		0 0 50% 50%;
 	}
 	
+	/* ---------------- HIDE -------------------*/
+	.downloadButtonArea {		
+		display:		none;
+	}
+
+	docsNav {
+		display:		none;
+	}
 }
