@@ -96,11 +96,16 @@ page {
 	margin:			0 auto 0 auto;
 	padding:		75px 0 40px 0;
 	
-	background:		hsl(207,10%,27%);
+	background:		hsl(207,10%,22%);
 		
+	background-image:	url(images/circuit.svg);
+	background-size:	390% 390%;
+	background-repeat:	no-repeat;
+	background-attachment:	fixed;
+	background-position:	27% 40%; 
+
 	display:		table;
 }
-
 
 
 /*==================== BG PATTERN PAGE =====================*/
@@ -108,18 +113,17 @@ page gfx {
 	width:			100%;
 	height:			auto;
 
-	position:		fixed;
+	position:		absolute;
 	top:			0px;
 	left:			0px;
-	right:			0px;
 	
-	border:			0px dashed blue;
+	border:			1px dashed blue;
 
-	opacity:		.02;
+	opacity:		.09;
 
 	margin:			0 auto;
 	
-	display:		block;	
+	display:		table;	
 	float:			left;
 	z-index:		0;
 }
@@ -131,7 +135,7 @@ page gfx cont {
 	left:			0px;
 	right:			0px;
 	
-	border:			0px dashed yellow;
+	border:			1px dashed yellow;
 
 	opacity:		1;
 
