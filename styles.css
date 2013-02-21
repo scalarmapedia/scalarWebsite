@@ -96,7 +96,7 @@ page {
 	margin:			0 auto 0 auto;
 	padding:		75px 0 40px 0;
 	
-	background:		hsl(207,10%,22%);
+	background:		hsl(207,10%,20%);
 		
 	background-image:	url(images/circuit.svg);
 	background-size:	390% 390%;
@@ -417,7 +417,9 @@ h2 {
 	height:			7rem;
 	display:		block;
 }
-
+#hover0_Blurry #discField {
+	fill:			hsl(210,75%,30%);
+}
 
 
 

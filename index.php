@@ -57,7 +57,7 @@ require_once(SITE_ROOT.'/scalar/php/svg.php');
 						<img src="/scalar/null.png" onLoad="scalar.icon(event,'hover1_Shadow','blue',Array(Array('browser_ie_nine',15,15,0,.7)),['dropShadow',0,1,6,7,0.8,Array(135,20,1),.5])">
 						<img src="/scalar/null.png" onLoad="scalar.icon(event,'hover1_Keyline','lemon',Array(Array('browser_chrome',20,20,0,.6)),['keyline',0,2,0,Array(0,100,100),.4])">
 						<img src="/scalar/null.png" onLoad="scalar.icon(event,'hover1_Glowy','red',Array(Array('web_html5',20,20,0,.6)),['glow',0,1.3,.5])">		
-						<img src="/scalar/null.png" onLoad="scalar.icon(event,'hover0_Blurry','green',Array(Array('icon_note',12.5,12.5,0,.75),Array('icon_disc',50,15,0,.3),Array('icon_clock',50,15,0,.3)),['gaussianBlur',1,3,0.6])">
+						<img src="/scalar/null.png" onLoad="scalar.icon(event,'hover0_Blurry','green',Array(Array('icon_note',12.5,12.5,0,.75),Array('icon_disc',50,15,0,.3),Array('icon_clock',50,15.5,0,.3)),['gaussianBlur',1,3,0.6])">
 						<img src="/scalar/null.png" onLoad="scalar.icon(event,'hover0_Grey','black',Array(Array('browser_firefox',17.5,17.5,0,.65)),['greyScale',1,1,.4])">
 					</iconset>
 					
